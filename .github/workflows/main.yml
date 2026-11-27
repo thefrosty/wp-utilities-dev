@@ -20,7 +20,10 @@ jobs:
         run: composer validate --strict --no-check-lock
 
       - name: Bash syntax check
-        run: for f in bin/*.sh; do bash -n "$f" && echo "ok: $f"; done
+        run: |
+          for f in bin/*.sh; do
+            bash -n "$f" && echo "ok: $f"
+          done
 
       - name: Every bin entry exists and is executable
         run: |
