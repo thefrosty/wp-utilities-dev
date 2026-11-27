@@ -1,0 +1,24 @@
+{
+  "name": "thefrosty/wp-utilities-dev",
+  "description": "Shared development scripts (PHPCS, PHPCBF, PHPStan, Psalm, ESLint, WordPress test suite installer) for thefrosty/wp-utilities and the packages built on it.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Austin Passy",
+      "email": "thefrosty@users.noreply.github.com",
+      "homepage": "https://austin.passy.co",
+      "role": "Developer"
+    }
+  ],
+  "keywords": ["wordpress", "dev", "phpcs", "phpstan", "ci"],
+  "bin": [
+    "bin/create-all-branches.sh",
+    "bin/eslint.sh",
+    "bin/install-wp-tests.sh",
+    "bin/phpcbf.sh",
+    "bin/phpcs.sh",
+    "bin/phpstan.sh",
+    "bin/psalm.sh"
+  ]
+}
